@@ -139,7 +139,7 @@ common to all
 
 .wrapper {
   display: block;
-  width: 768px;
+  width: 1000px;
   margin: 0 auto;
 }
 .nav {
@@ -221,7 +221,24 @@ media queries
 .desktop-only {
   display: block;
 }
-@media (max-width: 768px) {
+
+
+
+@media only screen and  (max-width: 768px) {
+  .wrapper {
+    width: 95%;
+  }
+
+  .mobile-only {
+    display: block ;
+  }
+  .desktop-only {
+    display: none !important;
+  }
+}
+/*
+
+@media only screen and  (max-width: 768px) {
   .wrapper {
     width: 95%;
   }
@@ -231,7 +248,11 @@ media queries
   .desktop-only {
     display: none !important;
   }
-}
+}*/
+
+
+
+
 .togglable {
   display: none;
 }
